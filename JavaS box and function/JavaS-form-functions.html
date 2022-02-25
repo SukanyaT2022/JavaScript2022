@@ -1,0 +1,24 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>JavaScript</title>
+    <script>
+function convert()
+{
+var num= parselInt(document.getElementById("txtnum").value)
+var convertFaren=(num *1.8)+32 
+alert("convertFaren")
+}
+    </script>
+
+  
+    </head>
+    <body>
+    <form>
+    Temperature in Celcius
+    <input type="text" id="txtnum">
+    <input type="button" value="Fahrenheit" onclick="convert()">
+    
+    </form>
+    </body>
+    </html>

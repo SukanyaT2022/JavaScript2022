@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function check() {
+            var num = parseInt(document.getElementById("agetype").value)
+            if (num < 13) {
+
+                alert("Kid")
+            }
+            else if (num > 12 && num < 19) {
+                alert("Teen")
+            }
+            else if (num > 17 && num < 26) {
+                alert("Young Adult")
+            }
+            else if (num > 25) {
+                alert("Adult")
+            }
+        }
+
+    </script>
+    <!--after teen coode did not work-->
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form>
+        Enter your age <input type="text" id="agetype">
+
+        <input type="button" value="Check age type" onclick="check()">
+    </form>
+
+</body>
+
+</html>

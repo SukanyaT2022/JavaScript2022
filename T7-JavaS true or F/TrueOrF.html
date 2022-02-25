@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="TrueOrF.css">
+    <title>Document</title>
+</head>
+<script>
+    function over100() {
+        var num1 = parseInt(document.getElementById("first-num").value)
+        var num2 = parseInt(document.getElementById("second-num").value)
+        if ((num1 + num2) > 100)
+            alert("over100")
+
+        else if ((num1 + num2) < 100)
+            alert("below 100")
+
+        else
+            alert("equal 100")
+
+
+    }
+
+
+</script>
+
+<body>
+<div class="big-box">
+    <div class="container">
+    
+    <form>
+        <h2>True or False</h2>
+       <label>Put first number</label><input type="text" id="first-num">
+        <br>
+        <label>Put second number </label> <input type="text" id="second-num">
+        <br>
+        <input type="button" value=Check onclick="over100()">
+
+    </form>
+</div>
+</div>
+
+  
+</body>
+
+</html>

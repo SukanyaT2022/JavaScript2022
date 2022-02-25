@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <!--<script src="inputJavaS.js"> </script>-->
+    <!--this is connect link bet HTML and JavaSript if put javaS in another page-->
+    <!--below how put java script in html page-->
+
+    <script>
+        function sum() {
+            var num = parseInt(document.getElementById("txtnum").value)
+            var priceitem = parseInt(document.getElementById("price").value)
+            var totalprice = num * priceitem
+            document.getElementById("total").value = totalprice
+
+            //alert ("Total is "+ totalprice)
+
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <form>
+        Enter quantity
+        <input type="text" id="txtnum">
+        <br>
+        Enter price $
+        <input type="text" id="price">
+        <br>
+        Total price
+        &nbsp; <input type="text" id="total">
+        <!--&nbsp; is code to add space on html-->
+        <br>
+
+        <input type="button" value="$ Total price" onclick="sum()">
+
+    </form>
+</body>
+
+</html>

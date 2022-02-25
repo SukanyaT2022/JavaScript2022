@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--javascript put inside head or inside body-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="big-box">
+        <div class="container">
+
+            <form>
+                <h2>Multiplication</h2>
+                <label>Put first number</label><input type="text" id="first-num">
+                <br>
+                <input type="button" value=Check onclick="getAnswer()">
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function getAnswer() {
+            var num1 = parseInt(document.getElementById("first-num").value)
+
+            for (var i = 1; i <= 10; i++) {
+
+                document.write("<br>" + (i * num1))
+
+                //or console.log(i) it show on inspect and hit console--so right click--different -doc.write will show on mainpage
+            }
+        }
+    </script>
+</body>
+
+</html>

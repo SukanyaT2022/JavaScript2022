@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function find_month(){
+var num= document.getElementById("month").value
+if (num==1 || num==3 || num==5)
+alert("31days")
+else if (num==2)
+alert("28 days")
+else if( num==4 || num==6)
+alert("30days")
+else
+alert("invalid")
+}
+
+
+
+
+
+</script>
+
+<body>
+  Put your month number <input type="text" id="month" >
+  <input type="button" value="Check" onclick="find_month()">
+</body>
+</html>
